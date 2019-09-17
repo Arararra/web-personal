@@ -17,16 +17,19 @@
 			'tahun' => '2009-2015',
 			'sekolah' => 'SD Muhammadiyah 25 Surabaya',
 			'lokasi' => 'Surabaya, Indonesia',
+			'gambar' => '<img src="media/mim25.jpg" alt="">',
 			],
 			[
 			'tahun' => '2015-2018',
 			'sekolah' => 'SMP Muhammadiyah 15 Surabaya',
 			'lokasi' => 'Surabaya, Indonesia',
+			'gambar' => "<img src='media/smpm15.png' alt=''>",
 			],
 			[
 			'tahun' => '2018-Sekarang',
 			'sekolah' => 'SMK Negeri 2 Surabaya',
 			'lokasi' => 'Surabaya, Indonesia',
+			'gambar' => '<img src="media/smkn2.jpg" alt="">',
 			],
 		];
 		$keahlian = [
@@ -96,14 +99,14 @@
 	<br><br><br>
 
 	<!-- pendidikan -->
-	<h1 align="center">Riwayat Sekolah</h1>
+	<h1 align="center">Riwayat Pendidikan</h1>
 	<div class="uk-flex uk-flex-center">
 	<?php foreach ($pendidikan as $key => $value): ?>
 	<div class="uk-child-width-1-2@ uk-margin-left">
     <div style="max-width: 400px;">
         <div class="uk-card uk-card-default">
             <div class="uk-card-media-top">
-                <img src="media/smkn2.jpg" alt="">
+                <?php echo $value['gambar'] ?>
             </div>
             <div class="uk-card-body">
                 <h3 class="uk-card-title"><?php echo $value['tahun'] ?></h3>
@@ -120,17 +123,37 @@
 
 	<!-- portofolio -->
 	<h1 align="center">Portofolio</h1>
+	<div class="uk-flex">
 	<div class="uk-card uk-card-default uk-card-body uk-width-1-2@m">
-    	<div class="uk-card-badge uk-label">PHP & HTML</div>
+    	<div class="uk-card-badge uk-label">PHP & HTML & Bootstrap</div>
     	<h3 class="uk-card-title">Database Sederhana</h3>
     	<p>Lorem ipsum color sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 		<a class="uk-button uk-button-default" href="#modal1" uk-toggle>Show Image</a>
+	</div>
+	<div class="uk-card uk-card-default uk-card-body uk-width-1-2@m">
+    	<div class="uk-card-badge uk-label">CSS & HTML</div>
+    	<h3 class="uk-card-title">Web Statis</h3>
+    	<p>Lorem ipsum color sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+		<a class="uk-button uk-button-default" href="#modal2" uk-toggle>Show Image</a>
+	</div>
 	</div>
 	<div id="modal1" class="uk-modal-full" uk-modal>
 	    <div class="uk-modal-dialog">
 	        <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
 	        <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
 	            <div class="uk-background-cover" style="background-image: url('media/portofolio/Form Database.png');" uk-height-viewport></div>
+	            <div class="uk-padding-large">
+	                <h1>Main page</h1>
+	                <p>Di halaman ini saya menggunakan HTML untuk pemrograman, CSS dan juga Bootstrap untuk membuat tampilan yang lebih baik.</p>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+	<div id="modal2" class="uk-modal-full" uk-modal>
+	    <div class="uk-modal-dialog">
+	        <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+	        <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
+	            <div class="uk-background-cover" style="background-image: url('media/portofolio/cafe.png');" uk-height-viewport></div>
 	            <div class="uk-padding-large">
 	                <h1>Main page</h1>
 	                <p>Di halaman ini saya menggunakan HTML untuk pemrograman, CSS dan juga Bootstrap untuk membuat tampilan yang lebih baik.</p>
