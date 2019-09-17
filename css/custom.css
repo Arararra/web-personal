@@ -11,3 +11,9 @@
 	font-size: 40px;
 	color: white;
 }
+
+hr{
+	border: none;
+	height: 3px;
+	background: rgb(229,229,229);
+}

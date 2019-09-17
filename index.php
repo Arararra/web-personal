@@ -8,6 +8,8 @@
 	<link rel="stylesheet" type="text/css" href="css/custom.css">
 </head>
 <body>
+	<script src="js/uikit.js"></script>
+	<script src="js/uikit-icons.js"></script>
 	<!-- php -->
 	<?php
 		$pendidikan = [
@@ -56,7 +58,7 @@
 	?>
 
 	<!-- navbar -->
-	<nav class="uk-navbar-container" uk-navbar style="position: sticky; top: 0;">
+	<nav class="uk-navbar-container" uk-navbar style="position: sticky; top: 0; z-index: 9999;">
     <div class="uk-navbar-left">
         <ul class="uk-navbar-nav">
             <li class="uk-active"><a href="#">Main Menu</a></li>
@@ -79,28 +81,56 @@
 	<p style="font-size: 500px; text-align: center;">A</p>
 
 	<!-- keahlian -->
-	<div class="uk-text-right@s uk-text-right@m uk-text-right@l" style="position: sticky; left: 100%; z-index: -999; width: 100%; max-width: 300px;">
-		<h2 align="center">Keahlian</h2>
-		<?php foreach ($keahlian as $key => $value): ?>
-			<div>
-				<p><?php echo $value['keahlian'] ?></p>
-				<p><?php echo $value['deskripsi'] ?></p>
-			</div>
-			<hr>
-		<?php endforeach ?>
+	<h1 align="center">Keahlian</h1>
+	<div class="uk-grid-column-small uk-grid-row-large uk-child-width-1-3@s uk-text-center" uk-grid>
+    <?php foreach ($keahlian as $key => $value): ?>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body">
+        	<p><?php echo $value['keahlian'] ?></p>
+			<p><?php echo $value['deskripsi'] ?></p>
+        </div>
+    </div>
+    <?php endforeach ?>
 	</div>
 
+	<br><br>
+
 	<!-- pendidikan -->
-	<div class="k-text-left@s uk-text-left@m uk-text-left@l" style="width: 100%; max-width: 300px;">
-		<h2 align="center">Pendidikan</h2>
-		<?php foreach ($pendidikan as $key => $value): ?>
-			<div>
-				<p><?php echo $value['tahun'] ?></p>
-				<p><?php echo $value['sekolah'] ?></p>
-				<p><?php echo $value['lokasi'] ?></p>
-			</div>
-			<hr>
-		<?php endforeach ?>
+	<h1 align="center">Riwayat Sekolah</h1>
+	<div class="uk-flex uk-flex-center">
+	<?php foreach ($pendidikan as $key => $value): ?>
+	<div class="uk-child-width-1-2@ uk-margin-left">
+    <div style="max-width: 400px;">
+        <div class="uk-card uk-card-default">
+            <div class="uk-card-media-top">
+                <img src="media/smkn2.jpg" alt="">
+            </div>
+            <div class="uk-card-body">
+                <h3 class="uk-card-title"><?php echo $value['tahun'] ?></h3>
+                <p><?php echo $value['sekolah'] ?></p>
+                <p><?php echo $value['lokasi'] ?></p>
+            </div>
+        </div>
+    </div>
+	</div>
+	<?php endforeach ?>
+	</div>
+
+	<br><br>
+
+	<!-- portofolio -->
+	<a class="uk-button uk-button-default" href="#modal-full" uk-toggle>Open</a>
+	<div id="modal-full" class="uk-modal-full" uk-modal>
+	    <div class="uk-modal-dialog">
+	        <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+	        <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
+	            <div class="uk-background-cover" style="background-image: url('images/photo.jpg');" uk-height-viewport></div>
+	            <div class="uk-padding-large">
+	                <h1>Headline</h1>
+	                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	            </div>
+	        </div>
+	    </div>
 	</div>
 
 	<!-- footer -->
