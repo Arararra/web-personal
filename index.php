@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Title</title>
 	<link rel="stylesheet" type="text/css" href="css\uikit.css">
-	<link rel="stylesheet" type="text/css" href="css/custom.css">
+	<link rel="stylesheet" type="text/css" href="css\custom.css">
 </head>
 <body>
 	<script src="js/uikit.js"></script>
@@ -86,14 +86,14 @@
     <?php foreach ($keahlian as $key => $value): ?>
     <div>
         <div class="uk-card uk-card-default uk-card-body">
-        	<p><?php echo $value['keahlian'] ?></p>
+        	<p><div class="uk-label uk-label-success"><?php echo $value['keahlian'] ?></div></p>
 			<p><?php echo $value['deskripsi'] ?></p>
         </div>
     </div>
     <?php endforeach ?>
 	</div>
 
-	<br><br>
+	<br><br><br>
 
 	<!-- pendidikan -->
 	<h1 align="center">Riwayat Sekolah</h1>
@@ -119,15 +119,21 @@
 	<br><br>
 
 	<!-- portofolio -->
-	<a class="uk-button uk-button-default" href="#modal-full" uk-toggle>Open</a>
-	<div id="modal-full" class="uk-modal-full" uk-modal>
+	<h1 align="center">Portofolio</h1>
+	<div class="uk-card uk-card-default uk-card-body uk-width-1-2@m">
+    	<div class="uk-card-badge uk-label">PHP & HTML</div>
+    	<h3 class="uk-card-title">Database Sederhana</h3>
+    	<p>Lorem ipsum color sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+		<a class="uk-button uk-button-default" href="#modal1" uk-toggle>Show Image</a>
+	</div>
+	<div id="modal1" class="uk-modal-full" uk-modal>
 	    <div class="uk-modal-dialog">
 	        <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
 	        <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
-	            <div class="uk-background-cover" style="background-image: url('images/photo.jpg');" uk-height-viewport></div>
+	            <div class="uk-background-cover" style="background-image: url('media/portofolio/Form Database.png');" uk-height-viewport></div>
 	            <div class="uk-padding-large">
-	                <h1>Headline</h1>
-	                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	                <h1>Main page</h1>
+	                <p>Di halaman ini saya menggunakan HTML untuk pemrograman, CSS dan juga Bootstrap untuk membuat tampilan yang lebih baik.</p>
 	            </div>
 	        </div>
 	    </div>
