@@ -92,7 +92,7 @@
 	<br><br id="profil"><br>
 
 	<!-- profil -->
-	<div class="uk-child-width-1-2@s uk-grid-match uk-flex uk-flex-center uk-margin" uk-grid>
+	<div class="uk-child-width-1-2@s uk-grid-match uk-flex uk-flex-center uk-margin uk-container">
 		<div>
 			<?php foreach ($profil as $key => $value): ?>
 	        <div class="uk-card uk-card-default uk-card-hover uk-card-body uk-text-center">
@@ -246,9 +246,6 @@
 	</div>
 
 	<br><br><br>
-
-	<!-- This is the modal with the default close button -->
-	
 
 	<!-- footer -->
 	<div>
