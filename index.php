@@ -6,10 +6,9 @@
 	<title>Title</title>
 	<link rel="stylesheet" type="text/css" href="css\uikit.css">
 	<link rel="stylesheet" type="text/css" href="css\custom.css">
+	<link href="css/lightbox.css" rel="stylesheet" />
 </head>
 <body>
-	<script src="js/uikit.js"></script>
-	<script src="js/uikit-icons.js"></script>
 	<!-- php -->
 	<?php
 		$profil = [
@@ -165,50 +164,27 @@
 
 	<!-- portofolio -->
 	<h1 align="center">Portofolio</h1>
-	<div class="uk-flex">
-	<div class="uk-card uk-card-default uk-card-body uk-width-1-2@m">
+	<div class="uk-container uk-margin uk-flex uk-flex-center">
+	<div class="uk-card uk-card-default uk-card-body uk-width-1-2@m uk-card-hover">
     	<div class="uk-card-badge uk-label">PHP & HTML & Bootstrap</div>
-    	<h3 class="uk-card-title">Database Sederhana</h3>
-    	<p>Lorem ipsum color sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-		<a class="uk-button uk-button-default" href="#modal1" uk-toggle>Show Image</a>
+    	<h3 class="uk-card-title">Registrasi Database</h3>
+    	<p>Membuat form registrasi yang terhubung dengan basis data SQL dan juga menampilkan tabel.</p>
+		<a class="uk-button uk-button-default" href="media/portofolio/form.png" data-lightbox="database" data-title="Ini adalah tampilan web registrasi.">Tampilkan</a>
 	</div>
-	<div class="uk-card uk-card-default uk-card-body uk-width-1-2@m">
+	<div class="uk-card uk-card-default uk-card-body uk-width-1-2@m uk-card-hover">
     	<div class="uk-card-badge uk-label">CSS & HTML</div>
-    	<h3 class="uk-card-title">Web Statis</h3>
-    	<p>Lorem ipsum color sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-		<a class="uk-button uk-button-default" href="#modal2" uk-toggle>Show Image</a>
+    	<h3 class="uk-card-title">Web Statis Cafe</h3>
+    	<p>Membuat web start-up untuk Cafe.</p>
+		<a class="uk-button uk-button-default" href="media/portofolio/homecafe.png" data-lightbox="cafe" data-title="Ini adalah tampilan awal web.">Tampilkan</a>
 	</div>
 	</div>
-	<div id="modal1" class="uk-modal-full" uk-modal>
-	    <div class="uk-modal-dialog">
-	        <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
-	        <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
-	            <div class="uk-background-cover" style="background-image: url('media/portofolio/Form Database.png');" uk-height-viewport></div>
-	            <div class="uk-padding-large">
-	                <h1>Main page</h1>
-	                <p>Di halaman ini saya menggunakan HTML untuk pemrograman, CSS dan juga Bootstrap untuk membuat tampilan yang lebih baik.</p>
-	            </div>
-	        </div>
-	    </div>
-	</div>
-	<div id="modal2" class="uk-modal-full" uk-modal>
-	    <div class="uk-modal-dialog">
-	        <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
-	        <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
-	            <div class="uk-background-cover" style="background-image: url('media/portofolio/cafe.png');" uk-height-viewport></div>
-	            <div class="uk-padding-large">
-	                <h1>Main page</h1>
-	                <p>Di halaman ini saya menggunakan HTML untuk pemrograman, CSS dan juga Bootstrap untuk membuat tampilan yang lebih baik.</p>
-	            </div>
-	        </div>
-	    </div>
 	</div>
 
 
 	<br><br id="kontak"><br>
 
 	<!-- kontak/hubungi -->
-	<div class="uk-child-width-1-2@s uk-grid-match uk-flex uk-flex-center uk-margin" uk-grid>
+	<div class="uk-child-width-1-2@s uk-grid-match uk-flex uk-flex-center uk-margin uk-container">
 	<div class="uk-card uk-card-default uk-card-body uk-width-1-2@m uk-card-hover">
 	    <form class="uk-form-horizontal uk-margin-large">
 	    <h1 class="uk-text-center">Hubungi Aku</h1>
@@ -216,6 +192,12 @@
 	        <label class="uk-form-label" for="form-horizontal-text">Nama</label>
 	        <div class="uk-form-controls">
 	            <input class="uk-input" id="form-horizontal-text" type="text" placeholder="Masukkan Nama Kalian">
+	        </div>
+	    </div>
+	    <div class="uk-margin">
+	        <label class="uk-form-label" for="form-horizontal-text">Email</label>
+	        <div class="uk-form-controls">
+	            <input class="uk-input" id="form-horizontal-text" type="text" placeholder="Masukkan Email Kalian">
 	        </div>
 	    </div>
 	    <div class="uk-margin">
@@ -229,7 +211,7 @@
 	        <textarea class="uk-textarea" rows="5" placeholder="Berikan pesanmu"></textarea>
 	    </div>
 	    <div class="uk-margin">
-	    	<input class="uk-button uk-button-default uk-width-1-1" type="submit" value="Kirim">
+	    	<input class="uk-button uk-button-default uk-width-1-1" type="submit" value="Kirim" uk-toggle="target: #modal-close-default">
 	    </div>
 		<div class="uk-text-center">
 			<h4>Atau melalui</h4>
@@ -258,9 +240,29 @@
 
 	<br><br><br>
 
+<!-- This is the modal with the default close button -->
+<div id="modal-close-default" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body">
+        <button class="uk-modal-close-default" type="button" uk-close></button>
+        <h2 class="uk-modal-title">Terima Kasih</h2>
+        <p>Terima kasih [nama] sudah memberikan pesanmu, Aku akan balas pesanmu secepatnya melalui emailmu.</p>
+    </div>
+</div>
+
 	<!-- footer -->
 	<div>
 		<p style="text-align: center; font-size: 15px;"><?php include 'footer.php' ?></p>
 	</div>
+
+	<!-- galeri -->
+	<a href="media/portofolio/afterform.png" data-lightbox="database" data-title="Ini adalah tampilan yang muncul setelah registrasi."></a>
+	<a href="media/portofolio/tabel.png" data-lightbox="database" data-title="Ini adalah tabel yang terhubung dengan basis data SQL"></a>
+	<a href="media/portofolio/aboutcafe.png" data-lightbox="cafe" data-title="Ini adalah tampilan tentang cafe."></a>
+	<a href="media/portofolio/menucafe.png" data-lightbox="cafe" data-title="Ini adalah contoh beberapa menu."></a>
+	<a href="media/portofolio/contactcafe.png" data-lightbox="cafe" data-title="Ini adalah tampilan kontak cafe."></a>
+
+	<script src="js/uikit.js"></script>
+	<script src="js/uikit-icons.js"></script>
+	<script src="js/lightbox-plus-jquery.js"></script>
 </body>
 </html>
