@@ -6,7 +6,7 @@
 	<title>Title</title>
 	<link rel="stylesheet" type="text/css" href="css\uikit.css">
 	<link rel="stylesheet" type="text/css" href="css\custom.css">
-	<link href="css/lightbox.css" rel="stylesheet" />
+	<link href="dist/css/lightbox.css" rel="stylesheet" />
 </head>
 <body>
 	<!-- php -->
@@ -240,14 +240,14 @@
 
 	<br><br><br>
 
-<!-- This is the modal with the default close button -->
-<div id="modal-close-default" uk-modal>
-    <div class="uk-modal-dialog uk-modal-body">
-        <button class="uk-modal-close-default" type="button" uk-close></button>
-        <h2 class="uk-modal-title">Terima Kasih</h2>
-        <p>Terima kasih [nama] sudah memberikan pesanmu, Aku akan balas pesanmu secepatnya melalui emailmu.</p>
-    </div>
-</div>
+	<!-- This is the modal with the default close button -->
+	<div id="modal-close-default" uk-modal>
+	    <div class="uk-modal-dialog uk-modal-body">
+	        <button class="uk-modal-close-default" type="button" uk-close></button>
+	        <h2 class="uk-modal-title">Terima Kasih</h2>
+	        <p>Terima kasih [nama] sudah memberikan pesanmu, Aku akan balas pesanmu secepatnya melalui emailmu.</p>
+	    </div>
+	</div>
 
 	<!-- footer -->
 	<div>
@@ -263,6 +263,6 @@
 
 	<script src="js/uikit.js"></script>
 	<script src="js/uikit-icons.js"></script>
-	<script src="js/lightbox-plus-jquery.js"></script>
+	<script src="dist/js/lightbox-plus-jquery.js"></script>
 </body>
 </html>
