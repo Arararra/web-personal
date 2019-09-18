@@ -45,27 +45,27 @@
 		$keahlian = [
 			[
 			'keahlian' => 'C++',
-			'deskripsi' => 'sample sample sample sample sample sample sample sample sample sample sample sample.',
+			'deskripsi' => 'Pemrograman dasar yang saya pelajari sejak duduk dibangku SMK.',
 			],
 			[
 			'keahlian' => 'HTML',
-			'deskripsi' => 'sample sample sample sample sample sample sample sample sample sample sample sample.',
+			'deskripsi' => 'Dasar dari pemrograman web yang paling penting.',
 			],
 			[
 			'keahlian' => 'CSS',
-			'deskripsi' => 'sample sample sample sample sample sample sample sample sample sample sample sample.',
+			'deskripsi' => 'Biasanya saya gunakan untuk membuat tampilan antar muka HTML digabung dengan Framework.',
 			],
 			[
 			'keahlian' => 'JAVA',
-			'deskripsi' => 'sample sample sample sample sample sample sample sample sample sample sample sample.',
+			'deskripsi' => 'Jarang saya gunakan karena kebutuhan untuk JAVA kurang.',
 			],
 			[
 			'keahlian' => 'PHP',
-			'deskripsi' => 'sample sample sample sample sample sample sample sample sample sample sample sample.',
+			'deskripsi' => 'Biasanya saya gunakan untuk membuat website dinamis digabung dengan HTML.',
 			],
 			[
 			'keahlian' => 'MySQL',
-			'deskripsi' => 'sample sample sample sample sample sample sample sample sample sample sample sample.',
+			'deskripsi' => 'Digunakan untuk membuat dan manajemen basis data SQL.',
 			],
 		];
 	?>
@@ -75,11 +75,11 @@
     <div class="uk-navbar-left">
         <ul class="uk-navbar-nav">
             <li class="uk-active"><a href="#">Main Menu</a></li>
-            <li><a href="#">Profil</a></li>
-            <li><a href="#">Keahlian</a></li>
-            <li><a href="#">Pendidikan</a></li>
-            <li><a href="#">Portofolio</a></li>
-            <li><a href="#">Kontak</a></li>
+            <li><a href="#profil">Profil</a></li>
+            <li><a href="#skill">Keahlian</a></li>
+            <li><a href="#sekolah">Pendidikan</a></li>
+            <li><a href="#portofolio">Portofolio</a></li>
+            <li><a href="#kontak">Kontak</a></li>
         </ul>
     </div>
 	</nav>
@@ -90,10 +90,10 @@
 		<p class="main-text"><?php include 'header.php'; ?></p>
 	</div>
 
-	<br><br><br>
+	<br><br id="profil"><br>
 
 	<!-- profil -->
-	<div class="uk-child-width-1-2@s uk-grid-match uk-flex-center uk-margin" uk-grid>
+	<div class="uk-child-width-1-2@s uk-grid-match uk-flex uk-flex-center uk-margin" uk-grid>
 		<div>
 			<?php foreach ($profil as $key => $value): ?>
 	        <div class="uk-card uk-card-default uk-card-hover uk-card-body uk-text-center">
@@ -119,11 +119,12 @@
 	    </div>
 	</div>
 
-	<br><br><br>
+	<br id="skill"><br><br>
 
 	<!-- keahlian -->
 	<h1 align="center">Keahlian</h1>
-	<div class="uk-grid-column-small uk-grid-row-large uk-child-width-1-3@s uk-text-center" uk-grid>
+	<div class="uk-container uk-container-expands">
+	<div class="uk-grid-column-small uk-grid-row-large uk-child-width-1-3@s uk-text-center uk-flex uk-flex-center" uk-grid>
     <?php foreach ($keahlian as $key => $value): ?>
     <div>
         <div class="uk-card uk-card-default uk-card-body uk-card-hover">
@@ -133,15 +134,17 @@
     </div>
     <?php endforeach ?>
 	</div>
+	</div>
 
-	<br><br><br>
+	<br id="sekolah"><br><br>
 
 	<!-- pendidikan -->
 	<h1 align="center">Riwayat Pendidikan</h1>
-	<div class="uk-flex uk-flex-center">
+	<div class="uk-container uk-margin">
+	<div class="uk-flex uk-flex-center" uk-grid>
 	<?php foreach ($pendidikan as $key => $value): ?>
 	<div class="uk-child-width-1-2@ uk-margin-left">
-    <div style="max-width: 400px;">
+    <div style="max-width: 330px;">
         <div class="uk-card uk-card-default uk-card-hover">
             <div class="uk-card-media-top">
                 <?php echo $value['gambar'] ?>
@@ -156,8 +159,9 @@
 	</div>
 	<?php endforeach ?>
 	</div>
+	</div>
 
-	<br><br><br>
+	<br id="portofolio"><br><br>
 
 	<!-- portofolio -->
 	<h1 align="center">Portofolio</h1>
@@ -201,11 +205,11 @@
 	</div>
 
 
-	<br><br><br>
+	<br><br id="kontak"><br>
 
 	<!-- kontak/hubungi -->
-	<div class="uk-child-width-1-2@s uk-grid-match uk-flex-center uk-margin" uk-grid>
-	<div class="uk-card uk-card-default uk-card-body uk-width-1-2@m">
+	<div class="uk-child-width-1-2@s uk-grid-match uk-flex uk-flex-center uk-margin" uk-grid>
+	<div class="uk-card uk-card-default uk-card-body uk-width-1-2@m uk-card-hover">
 	    <form class="uk-form-horizontal uk-margin-large">
 	    <h1 class="uk-text-center">Hubungi Aku</h1>
 	    <div class="uk-margin">
