@@ -67,14 +67,45 @@
 			'deskripsi' => 'Digunakan untuk membuat dan manajemen basis data SQL.',
 			],
 		];
+		$portofolio = [
+			[
+			'label' => 'PHP & HTML & CSS',
+			'judul' => 'Registrasi Database',
+			'deskripsi' => 'Membuat form registrasi yang terhubung dengan basis data SQL dan juga menampilkan tabel.',
+			'galeri' => 'database',
+			'image' => 'media/portofolio/form.png',
+			'caption' => 'Ini adalah tampilan web registrasi.',
+			],
+			[
+			'label' => 'HTML & CSS',
+			'judul' => 'Web Statis Cafe',
+			'deskripsi' => 'Membuat web start-up untuk Cafe.',
+			'galeri' => 'cafe',
+			'image' => 'media/portofolio/homecafe.png',
+			'caption' => 'Ini adalah tampilan awal web cafe.',
+			],
+		];
+		$sosmed = [
+			[
+			'sosmed' => '<a href="https://t.me/Ararra"><img src="media/ikon/telegram.svg" width="40px" alt="telegram"></a>',
+			],
+			[
+			'sosmed' => '<a href="https://www.facebook.com/profile.php?id=100040939097287"><img src="media/ikon/facebook.svg" width="40px"></a>',
+			],
+			[
+			'sosmed' => '<a href="https://wa.me/62895341112746"><img src="media/ikon/whatsapp.svg" width="40px"></a>',
+			],
+			[
+			'sosmed' => '<a href="https://www.instagram.com/mramamaulana60/?hl=id"><img src="media/ikon/instagram.svg" width="40px"></a>',
+			],
+		];
 	?>
 
 	<!-- navbar -->
 	<nav class="uk-navbar-container" uk-navbar style="position: sticky; top: 0; z-index: 2;">
     <div class="uk-navbar-left">
         <ul class="uk-navbar-nav">
-            <li class="uk-active"><a href="#">Main Menu</a></li>
-            <li><a href="#profil">Profil</a></li>
+            <li class="uk-active"><a href="#profil">Profil</a></li>
             <li><a href="#skill">Keahlian</a></li>
             <li><a href="#sekolah">Pendidikan</a></li>
             <li><a href="#portofolio">Portofolio</a></li>
@@ -126,7 +157,7 @@
 	<div class="uk-grid-column-small uk-grid-row-large uk-child-width-1-3@s uk-text-center uk-flex uk-flex-center" uk-grid>
     <?php foreach ($keahlian as $key => $value): ?>
     <div>
-        <div class="uk-card uk-card-default uk-card-body uk-card-hover">
+        <div class="uk-card uk-card-default uk-card-body uk-card-hover" style="height: 200px">
         	<p><div class="uk-label uk-label-success"><?php echo $value['keahlian'] ?></div></p>
 			<p><?php echo $value['deskripsi'] ?></p>
         </div>
@@ -139,12 +170,12 @@
 
 	<!-- pendidikan -->
 	<h1 align="center">Riwayat Pendidikan</h1>
-	<div class="uk-container uk-margin">
+	<div class="uk-grid-column-small uk-grid-row-large uk-child-width-expand@s uk-text-center uk-flex uk-flex-center">
 	<div class="uk-flex uk-flex-center" uk-grid>
 	<?php foreach ($pendidikan as $key => $value): ?>
-	<div class="uk-child-width-1-2@ uk-margin-left">
-    <div style="max-width: 330px;">
-        <div class="uk-card uk-card-default uk-card-hover">
+	<div class="uk-child-width-1-2@">
+    <div style="max-width: 370px;">
+        <div class="uk-card uk-card-default uk-card-body uk-card-hover" style="height: 550px">
             <div class="uk-card-media-top">
                 <?php echo $value['gambar'] ?>
             </div>
@@ -164,22 +195,20 @@
 
 	<!-- portofolio -->
 	<h1 align="center">Portofolio</h1>
-	<div class="uk-container uk-margin uk-flex uk-flex-center">
-	<div class="uk-card uk-card-default uk-card-body uk-width-1-2@m uk-card-hover">
-    	<div class="uk-card-badge uk-label">PHP & HTML & Bootstrap</div>
-    	<h3 class="uk-card-title">Registrasi Database</h3>
-    	<p>Membuat form registrasi yang terhubung dengan basis data SQL dan juga menampilkan tabel.</p>
-		<a class="uk-button uk-button-default" href="media/portofolio/form.png" data-lightbox="database" data-title="Ini adalah tampilan web registrasi.">Tampilkan</a>
-	</div>
-	<div class="uk-card uk-card-default uk-card-body uk-width-1-2@m uk-card-hover">
-    	<div class="uk-card-badge uk-label">CSS & HTML</div>
-    	<h3 class="uk-card-title">Web Statis Cafe</h3>
-    	<p>Membuat web start-up untuk Cafe.</p>
-		<a class="uk-button uk-button-default" href="media/portofolio/homecafe.png" data-lightbox="cafe" data-title="Ini adalah tampilan awal web.">Tampilkan</a>
+	<div class="uk-grid-column-small uk-grid-row-large uk-child-width-expand@s uk-flex uk-flex-center">
+	<div class="uk-flex uk-flex-center uk-grid-large uk-grid" uk-grid>
+	<?php foreach ($portofolio as $key => $value): ?>
+	<div class="uk-child-width-expand@s">
+	<div class="uk-card uk-card-default uk-card-body uk-card-hover portofolio">
+	    <div class="uk-card-badge uk-label"><?php echo $value['label'] ?></div>
+	    <h3 class="uk-card-title"><?php echo $value['judul'] ?></h3>
+	    <p><?php echo $value['deskripsi'] ?></p>
+	    <a class="uk-button uk-button-default" href="<?php echo $value['image'] ?>" data-lightbox="<?php echo $value['galeri'] ?>" data-title="<?php echo $value['caption'] ?>">Tampilkan</a>
 	</div>
 	</div>
+	<?php endforeach ?>
 	</div>
-
+	</div>
 
 	<br><br id="kontak"><br>
 
@@ -211,34 +240,24 @@
 	        <textarea class="uk-textarea" rows="5" placeholder="Berikan pesanmu"></textarea>
 	    </div>
 	    <div class="uk-margin">
-	    	<input class="uk-button uk-button-default uk-width-1-1" type="submit" value="Kirim" uk-toggle="target: #modal-close-default">
+	    	<button class="uk-button uk-button-default uk-width-1-1" type="button" uk-toggle="target: #modal-close-default">Kirim</button>
 	    </div>
 		<div class="uk-text-center">
 			<h4>Atau melalui</h4>
 			<div class="uk-flex uk-flex-center">
-				<div class="uk-margin-left">
-					<img src="media/ikon/telegram.svg" width="40px">
-					<p>0895341112746</p>
-				</div>
-				<div class="uk-margin-left">
-					<img src="media/ikon/facebook.svg" width="40px">
-					<p>Rama</p>
-				</div>
-				<div class="uk-margin-left">
-					<img src="media/ikon/whatsapp.svg" width="40px">
-					<p>0895341112746</p>
-				</div>
-				<div class="uk-margin-left">
-					<img src="media/ikon/instagram.svg" width="40px">
-					<p>Rama Maulana</p>
-				</div>
+				<?php foreach ($sosmed as $key => $value): ?>
+					<div class="uk-margin-right uk-margin-left">
+						<?php echo $value['sosmed'] ?>
+					</div>
+				<?php endforeach ?>
 			</div>
 		</div>
+		<!-- modal -->
 		<div id="modal-close-default" uk-modal>
 	    <div class="uk-modal-dialog uk-modal-body">
 	        <button class="uk-modal-close-default" type="button" uk-close></button>
 	        <h2 class="uk-modal-title">Terima Kasih</h2>
-	        <p>Terima kasih [nama] sudah memberikan pesanmu, Aku akan balas pesanmu secepatnya melalui emailmu.</p>
+	        <p>Terima kasih sudah memberikan pesanmu, Aku akan balas pesanmu secepatnya melalui emailmu.</p>
 	    </div>
 		</div>
 		</form>
