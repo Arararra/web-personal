@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>V2</title>
+	<title>V1</title>
 	<link rel="stylesheet" type="text/css" href="css\uikit.css">
 	<link rel="stylesheet" type="text/css" href="css\custom.css">
 	<link href="dist/css/lightbox.css" rel="stylesheet" />
@@ -17,7 +17,7 @@
 			'nama' => 'M. Rama Maulana',
 			'ttl' => '09 Oktober 2002, Surabaya',
 			'alamat' => 'Jl. Tanah Merah Sayur 4 no. 32 Surabaya, Indonesia',
-			'foto' => '<img class="uk-border-circle" width="200" height="200" src="media/foto.jpg">',
+			'foto' => 'media/foto.jpg',
 			'hobi' => 'main game, koding, mendengarkan musik',
 			],
 		];
@@ -128,7 +128,7 @@
 			<?php foreach ($profil as $key => $value): ?>
 	        <div class="uk-card uk-card-default uk-card-hover uk-card-body uk-text-center">
 	        	<h1><b>Profilku</b></h1>
-	            <h3 class="uk-card-title uk-text-center"><?php echo $value['foto'] ?></h3>
+	            <h3 class="uk-card-title uk-text-center"><img class="uk-border-circle" width="200" height="200" src="<?php echo $value['foto'] ?>"></h3>
 	            <p>Perkenalkan, namaku <?php echo $value['nama'] ?> biasa dipanggil <?php echo $value['panggilan'] ?></p>
 				<div class="uk-grid-divider uk-child-width-expand@s" uk-grid>
 			    <div>
@@ -154,7 +154,7 @@
 	<!-- keahlian -->
 	<h1 align="center">Keahlian</h1>
 	<div class="uk-container uk-container-expands">
-	<div class="uk-grid-column-small uk-grid-row-large uk-child-width-1-3@s uk-text-center uk-flex uk-flex-center" uk-grid>
+	<div class="uk-grid-column-small uk-grid-row-small uk-child-width-1-3@s uk-text-center uk-flex uk-flex-center" uk-grid>
     <?php foreach ($keahlian as $key => $value): ?>
     <div>
         <div class="uk-card uk-card-default uk-card-body uk-card-hover" style="height: 200px">

@@ -39,7 +39,7 @@
             <div class="uk-card-body uk-card-default uk-position-center">
             	<div class="uk-text-center">
             		<h3 class="uk-card-title"><?php include 'header.php'; ?></h3>
-                	<p>Akses ditolak.</p>
+                	<p>Akses ditolak. Anda akan diarahkan ke index.php</p>
             	</div>
             </div>
         </div>
