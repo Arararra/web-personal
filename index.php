@@ -26,19 +26,19 @@
 			'tahun' => '2009-2015',
 			'sekolah' => 'SD Muhammadiyah 25 Surabaya',
 			'lokasi' => 'Surabaya, Indonesia',
-			'gambar' => '<img src="media/mim25.jpg" alt="">',
+			'gambar' => 'media/mim25.jpg',
 			],
 			[
 			'tahun' => '2015-2018',
 			'sekolah' => 'SMP Muhammadiyah 15 Surabaya',
 			'lokasi' => 'Surabaya, Indonesia',
-			'gambar' => "<img src='media/smpm15.png' alt=''>",
+			'gambar' => 'media/smpm15.png',
 			],
 			[
 			'tahun' => '2018-Sekarang',
 			'sekolah' => 'SMK Negeri 2 Surabaya',
 			'lokasi' => 'Surabaya, Indonesia',
-			'gambar' => '<img src="media/smkn2.jpg" alt="">',
+			'gambar' => 'media/smkn2.jpg',
 			],
 		];
 		$keahlian = [
@@ -177,7 +177,7 @@
     <div style="max-width: 370px;">
         <div class="uk-card uk-card-default uk-card-body uk-card-hover" style="height: 550px">
             <div class="uk-card-media-top">
-                <?php echo $value['gambar'] ?>
+                <img src="<?php echo $value['gambar'] ?>" alt="">
             </div>
             <div class="uk-card-body">
                 <h3 class="uk-card-title"><?php echo $value['tahun'] ?></h3>
