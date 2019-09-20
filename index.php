@@ -215,32 +215,33 @@
 	<!-- kontak/hubungi -->
 	<div class="uk-child-width-1-2@s uk-grid-match uk-flex uk-flex-center uk-margin uk-container">
 	<div class="uk-card uk-card-default uk-card-body uk-width-1-2@m uk-card-hover">
-	    <form class="uk-form-horizontal uk-margin-large">
+	    <form class="uk-form-horizontal uk-margin-large" action="thanks.php" method="post">
 	    <h1 class="uk-text-center">Hubungi Aku</h1>
 	    <div class="uk-margin">
 	        <label class="uk-form-label" for="form-horizontal-text">Nama</label>
 	        <div class="uk-form-controls">
-	            <input class="uk-input" id="form-horizontal-text" type="text" placeholder="Masukkan Nama Kalian">
+	            <input class="uk-input" id="form-horizontal-text" type="text" placeholder="Nama" name="nama" data-validation="length" data-validation-length="min2">
 	        </div>
 	    </div>
 	    <div class="uk-margin">
 	        <label class="uk-form-label" for="form-horizontal-text">Email</label>
 	        <div class="uk-form-controls">
-	            <input class="uk-input" id="form-horizontal-text" type="text" placeholder="Masukkan Email Kalian">
+	            <input class="uk-input" id="form-horizontal-text" type="email" placeholder="Email@mail.com" name="email" data-validation="email" data-validation-length="min4">
 	        </div>
 	    </div>
 	    <div class="uk-margin">
-	        <div class="uk-form-label">Jenis Kelamin</div>
+	        <div class="uk-form-label">Jenis Kelamin (opsional)</div>
 	        <div class="uk-form-controls uk-form-controls-text">
-	            <label><input class="uk-radio" type="radio" name="radio1"> Laki-laki</label><br>
-	            <label><input class="uk-radio" type="radio" name="radio1"> Perempuan</label>
+	            <label><input class="uk-radio" type="radio" name="radio1" value="You're such a great Guy"> Laki-laki</label><br>
+	            <label><input class="uk-radio" type="radio" name="radio1" value="You're such a nice Girl"> Perempuan</label>
+	            
 	        </div>
 	    </div>
 	    <div class="uk-margin">
 	        <textarea class="uk-textarea" rows="5" placeholder="Berikan pesanmu"></textarea>
 	    </div>
 	    <div class="uk-margin">
-	    	<button class="uk-button uk-button-default uk-width-1-1" type="button" uk-toggle="target: #modal-close-default">Kirim</button>
+	    	<button class="uk-button uk-button-default uk-width-1-1" type="submit">Kirim</button>
 	    </div>
 		<div class="uk-text-center">
 			<h4>Atau melalui</h4>
@@ -251,14 +252,6 @@
 					</div>
 				<?php endforeach ?>
 			</div>
-		</div>
-		<!-- modal -->
-		<div id="modal-close-default" uk-modal>
-	    <div class="uk-modal-dialog uk-modal-body">
-	        <button class="uk-modal-close-default" type="button" uk-close></button>
-	        <h2 class="uk-modal-title">Terima Kasih</h2>
-	        <p>Terima kasih sudah memberikan pesanmu, Aku akan balas pesanmu secepatnya melalui emailmu.</p>
-	    </div>
 		</div>
 		</form>
 	</div>
@@ -281,5 +274,12 @@
 	<script src="js/uikit.js"></script>
 	<script src="js/uikit-icons.js"></script>
 	<script src="dist/js/lightbox-plus-jquery.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+	<script>
+	  $.validate({
+	    lang: 'en'
+	  });
+	</script>
 </body>
 </html>
