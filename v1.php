@@ -4,8 +4,8 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>V1</title>
-	<link rel="stylesheet" href="css\uikit.css">
-	<link rel="stylesheet" href="css\custom.css">
+	<link rel="stylesheet" href="css/uikit.css">
+	<link rel="stylesheet" href="css/custom.css">
 	<link rel="stylesheet" href="dist/css/lightbox.css">
 </head>
 <body>
