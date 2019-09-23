@@ -47,7 +47,7 @@
 	</div>
 
 	<?php 
-	header( "refresh:5;url=index.php" );
+	header( "refresh:3;url=index.php" );
 	die();	
 	}
 	?>

@@ -215,12 +215,12 @@
 	<!-- kontak/hubungi -->
 	<div class="uk-child-width-1-2@s uk-grid-match uk-flex uk-flex-center uk-margin uk-container">
 	<div class="uk-card uk-card-default uk-card-body uk-width-1-2@m uk-card-hover">
-	    <form class="uk-form-horizontal uk-margin-large" action="thanks.php" method="post">
+	    <form class="uk-form-horizontal uk-margin-large" action="portofolio.php" method="get">
 	    <h1 class="uk-text-center">Hubungi Aku</h1>
 	    <div class="uk-margin">
 	        <label class="uk-form-label" for="form-horizontal-text">Nama</label>
 	        <div class="uk-form-controls">
-	            <input class="uk-input" id="form-horizontal-text" type="text" placeholder="Nama" name="nama" data-validation="length" data-validation-length="min2">
+	            <input class="uk-input" id="form-horizontal-text" type="text" placeholder="Nama" name="nama" data-validation="length" data-validation-length="min2" name="nama">
 	        </div>
 	    </div>
 	    <div class="uk-margin">

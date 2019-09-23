@@ -1,105 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>V1</title>
-	<link rel="stylesheet" href="css/uikit.css">
-	<link rel="stylesheet" href="css/custom.css">
-	<link rel="stylesheet" href="dist/css/lightbox.css">
-</head>
-<body>
-	<!-- php -->
-	<?php
-		$profil = [
-			[
-			'panggilan' => 'Rama',
-			'nama' => 'M. Rama Maulana',
-			'ttl' => '09 Oktober 2002, Surabaya',
-			'alamat' => 'Jl. Tanah Merah Sayur 4 no. 32 Surabaya, Indonesia',
-			'foto' => 'media/foto.jpg',
-			'hobi' => 'main game, koding, mendengarkan musik',
-			],
-		];
-		$pendidikan = [
-			[
-			'tahun' => '2009-2015',
-			'sekolah' => 'SD Muhammadiyah 25 Surabaya',
-			'lokasi' => 'Surabaya, Indonesia',
-			'gambar' => 'media/mim25.jpg',
-			],
-			[
-			'tahun' => '2015-2018',
-			'sekolah' => 'SMP Muhammadiyah 15 Surabaya',
-			'lokasi' => 'Surabaya, Indonesia',
-			'gambar' => 'media/smpm15.png',
-			],
-			[
-			'tahun' => '2018-Sekarang',
-			'sekolah' => 'SMK Negeri 2 Surabaya',
-			'lokasi' => 'Surabaya, Indonesia',
-			'gambar' => 'media/smkn2.jpg',
-			],
-		];
-		$keahlian = [
-			[
-			'keahlian' => 'C++',
-			'deskripsi' => 'Pemrograman dasar yang saya pelajari sejak duduk dibangku SMK.',
-			],
-			[
-			'keahlian' => 'HTML',
-			'deskripsi' => 'Dasar dari pemrograman web yang paling penting.',
-			],
-			[
-			'keahlian' => 'CSS',
-			'deskripsi' => 'Biasanya saya gunakan untuk membuat tampilan antar muka HTML digabung dengan Framework.',
-			],
-			[
-			'keahlian' => 'JAVA',
-			'deskripsi' => 'Jarang saya gunakan karena kebutuhan untuk JAVA kurang.',
-			],
-			[
-			'keahlian' => 'PHP',
-			'deskripsi' => 'Biasanya saya gunakan untuk membuat website dinamis digabung dengan HTML.',
-			],
-			[
-			'keahlian' => 'MySQL',
-			'deskripsi' => 'Digunakan untuk membuat dan manajemen basis data SQL.',
-			],
-		];
-		$portofolio = [
-			[
-			'label' => 'PHP & HTML & CSS',
-			'judul' => 'Registrasi Database',
-			'deskripsi' => 'Membuat form registrasi yang terhubung dengan basis data SQL dan juga menampilkan tabel.',
-			'galeri' => 'database',
-			'image' => 'media/portofolio/form.png',
-			'caption' => 'Ini adalah tampilan web registrasi.',
-			],
-			[
-			'label' => 'HTML & CSS',
-			'judul' => 'Web Statis Cafe',
-			'deskripsi' => 'Membuat web start-up untuk Cafe.',
-			'galeri' => 'cafe',
-			'image' => 'media/portofolio/homecafe.png',
-			'caption' => 'Ini adalah tampilan awal web cafe.',
-			],
-		];
-		$sosmed = [
-			[
-			'sosmed' => '<a href="https://t.me/Ararra"><img src="media/ikon/telegram.svg" width="40px" alt="telegram"></a>',
-			],
-			[
-			'sosmed' => '<a href="https://www.facebook.com/profile.php?id=100040939097287"><img src="media/ikon/facebook.svg" width="40px"></a>',
-			],
-			[
-			'sosmed' => '<a href="https://wa.me/62895341112746"><img src="media/ikon/whatsapp.svg" width="40px"></a>',
-			],
-			[
-			'sosmed' => '<a href="https://www.instagram.com/mramamaulana60/?hl=id"><img src="media/ikon/instagram.svg" width="40px"></a>',
-			],
-		];
-	?>
+<?php include 'header.php'; ?>
 
 	<!-- navbar -->
 	<nav class="uk-navbar-container" uk-navbar style="position: sticky; top: 0; z-index: 2;">
@@ -117,7 +16,7 @@
 	<!-- main menu/head -->
 	<div class="main">
 		<img src="media/mainimage.jpg" class="main-image" uk-img>
-		<p class="main-text"><?php include 'header.php'; ?></p>
+		<p class="main-text">Welcome to My Web</p>
 	</div>
 
 	<br><br id="profil"><br>
@@ -259,27 +158,4 @@
 
 	<br><br><br>
 
-	<!-- footer -->
-	<div>
-		<p style="text-align: center; font-size: 15px;"><?php include 'footer.php' ?></p>
-	</div>
-
-	<!-- galeri -->
-	<a href="media/portofolio/afterform.png" data-lightbox="database" data-title="Ini adalah tampilan yang muncul setelah registrasi."></a>
-	<a href="media/portofolio/tabel.png" data-lightbox="database" data-title="Ini adalah tabel yang terhubung dengan basis data SQL"></a>
-	<a href="media/portofolio/aboutcafe.png" data-lightbox="cafe" data-title="Ini adalah tampilan tentang cafe."></a>
-	<a href="media/portofolio/menucafe.png" data-lightbox="cafe" data-title="Ini adalah contoh beberapa menu."></a>
-	<a href="media/portofolio/contactcafe.png" data-lightbox="cafe" data-title="Ini adalah tampilan kontak cafe."></a>
-
-	<script src="js/uikit.js"></script>
-	<script src="js/uikit-icons.js"></script>
-	<script src="dist/js/lightbox-plus-jquery.js"></script>
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
-	<script>
-	  $.validate({
-	    lang: 'en'
-	  });
-	</script>
-</body>
-</html>
+<?php include 'footer.php' ?>
