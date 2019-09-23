@@ -16,7 +16,7 @@
 	<div class="uk-container uk-margin-top uk-margin-bottom">
 	<div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
     <div class="uk-card-media-left uk-cover-container">
-        <a  data-lightbox="database1" data-title="This is the main page of Registration Form." href="media/portofolio/form.png"><img src="media/portofolio/form.png" uk-cover></a>
+        <a  data-lightbox="database" data-title="This is the main page of Registration Form." href="media/portofolio/form.png"><img src="media/portofolio/form.png" uk-cover></a>
         <canvas width="600" height="400"></canvas>
     </div>
     <div>
@@ -29,8 +29,8 @@
             <p>Database registration using PHP and HTML that connected to MySQL server.</p>
             <P>Completed: 17 July 2019</P>
             <a class="uk-button uk-button-default" href="v2.php">back to v2</a><br><br>
-            <a href="media/portofolio/afterform.png" data-lightbox="database1" data-title="This is a page that show when you successfully register a data."><img class="width" src="media/portofolio/afterform.png"></a>
-			<a href="media/portofolio/tabel.png" data-lightbox="database1" data-title="This is a table that connected to MySQL server."><img class="width" src="media/portofolio/tabel.png"></a>
+            <a href="media/portofolio/afterform.png" data-lightbox="database" data-title="This is a page that show when you successfully register a data."><img class="width" src="media/portofolio/afterform.png"></a>
+			<a href="media/portofolio/tabel.png" data-lightbox="database" data-title="This is a table that connected to MySQL server."><img class="width" src="media/portofolio/tabel.png"></a>
         </div>
     </div>
 	</div>
@@ -43,7 +43,7 @@
 	<div class="uk-container uk-margin-top uk-margin-bottom">
 	<div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
     <div class="uk-card-media-left uk-cover-container">
-        <a  data-lightbox="cafe1" data-title="This is the home page of website." href="media/portofolio/homecafe.png"><img src="media/portofolio/homecafe.png" uk-cover></a>
+        <a  data-lightbox="cafe" data-title="This is the home page of website." href="media/portofolio/homecafe.png"><img src="media/portofolio/homecafe.png" uk-cover></a>
         <canvas width="600" height="400"></canvas>
     </div>
     <div>
@@ -54,9 +54,9 @@
             <p>A static web that used to promote cafe.</p>
             <P>Completed: 10 September 2019</P>
             <a class="uk-button uk-button-default" href="v2.php">back to v2</a><br><br>
-			<a href="media/portofolio/aboutcafe.png" data-lightbox="cafe1" data-title="This is the page that show cafe information."><img class="width" src="media/portofolio/aboutcafe.png"></a>
-			<a href="media/portofolio/menucafe.png" data-lightbox="cafe1" data-title="This is the page that show cafe menu."><img class="width" src="media/portofolio/menucafe.png"></a>
-			<a href="media/portofolio/contactcafe.png" data-lightbox="cafe1" data-title="This is the page that show cafe contact."><img class="width" src="media/portofolio/contactcafe.png"></a>
+			<a href="media/portofolio/aboutcafe.png" data-lightbox="cafe" data-title="This is the page that show cafe information."><img class="width" src="media/portofolio/aboutcafe.png"></a>
+			<a href="media/portofolio/menucafe.png" data-lightbox="cafe" data-title="This is the page that show cafe menu."><img class="width" src="media/portofolio/menucafe.png"></a>
+			<a href="media/portofolio/contactcafe.png" data-lightbox="cafe" data-title="This is the page that show cafe contact."><img class="width" src="media/portofolio/contactcafe.png"></a>
         </div>
     </div>
 	</div>

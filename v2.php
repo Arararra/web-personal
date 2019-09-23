@@ -54,8 +54,9 @@
 
 		<!-- portfolio -->
 		<h1>Portfolio</h1>
-		<a href="portofolio.php?id=0">aaaaa</a>
-		<a href="portofolio.php?id=1">aaaaa</a>
+		<?php foreach ($portofolio as $key => $value): ?>
+		<a href="portofolio.php?id=<?php echo $value['id'] ?>"><img src="<?php echo $value['image'] ?>" width="300"></a>
+		<?php endforeach ?>
 		<hr>
 
 		<!-- kontak -->

@@ -89,6 +89,7 @@
 			'galeri' => 'database',
 			'image' => 'media/portofolio/form.png',
 			'caption' => 'Ini adalah tampilan web registrasi.',
+			'id' => "0",
 			],
 			[
 			'label' => 'HTML & CSS',
@@ -97,6 +98,7 @@
 			'galeri' => 'cafe',
 			'image' => 'media/portofolio/homecafe.png',
 			'caption' => 'Ini adalah tampilan awal web cafe.',
+			'id' => "1",
 			],
 		];
 		$sosmed = [
