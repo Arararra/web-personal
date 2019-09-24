@@ -74,8 +74,9 @@
 	<?php foreach ($pendidikan as $key => $value): ?>
     <div style="max-width: 390px;">
         <div class="uk-card uk-card-default uk-card-body uk-card-hover" style="height: 500px">
-            <div class="uk-card-media-top" style="max-height: 190px; overflow: hidden;">
+            <div class="uk-card-media-top uk-cover-container" style="max-height: 190px; overflow: hidden;">
                 <img src="<?php echo $value['gambar'] ?>">
+                <canvas width="600" height="400"></canvas>
             </div>
             <div class="uk-card-body">
                 <h3 class="uk-card-title"><?php echo $value['tahun'] ?></h3>
@@ -131,21 +132,20 @@
 	        <div class="uk-form-controls uk-form-controls-text">
 	            <label><input class="uk-radio" type="radio" name="radio1" value="You're such a great Guy"> Laki-laki</label><br>
 	            <label><input class="uk-radio" type="radio" name="radio1" value="You're such a nice Girl"> Perempuan</label>
-	            
 	        </div>
 	    </div>
 	    <div class="uk-margin">
 	        <textarea class="uk-textarea" rows="5" placeholder="Berikan pesanmu"></textarea>
 	    </div>
 	    <div class="uk-margin">
-	    	<button class="uk-button uk-button-default uk-width-1-1" type="submit">Kirim</button>
+	    	<button class="uk-button uk-button-primary uk-width-1-1" type="submit">Kirim</button>
 	    </div>
 		<div class="uk-text-center">
 			<h4>Atau melalui</h4>
 			<div class="uk-flex uk-flex-center">
 				<?php foreach ($sosmed as $key => $value): ?>
 					<div class="uk-margin-right uk-margin-left">
-						<?php echo $value['sosmed'] ?>
+						<a href=""><img src="<?php echo $value['ikon'] ?>" width="40px"></a>
 					</div>
 				<?php endforeach ?>
 			</div>

@@ -14,12 +14,9 @@
 	color: white;
 }
 
-.HTML {background-color: #4CAF50;}
-.CSS {background-color: #2196F3;}
-.C {background-color: #f44336;}
-.PHP {background-color: #808080;}
-.JAVA {background-color: #fcba03;}
-.MySQL {background-color: #9c07b3;}
+.green {background-color: #4CAF50;}
+.yellow {background-color: #2196F3;}
+.red {background-color: #f44336;}
 
 @media only screen and (min-width: 600px){
 	.kanan{

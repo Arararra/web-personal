@@ -49,37 +49,37 @@
 			'keahlian' => 'C++',
 			'deskripsi' => 'Pemrograman dasar yang saya pelajari sejak duduk dibangku SMK.',
 			'persen' => '60%',
-			'skill' => 'C',
+			'skill' => 'yellow',
 			],
 			[
 			'keahlian' => 'HTML',
 			'deskripsi' => 'Dasar dari pemrograman web yang paling penting.',
 			'persen' => '75%',
-			'skill' => 'HTML',
+			'skill' => 'green',
 			],
 			[
 			'keahlian' => 'CSS',
 			'deskripsi' => 'Biasanya saya gunakan untuk membuat tampilan antar muka HTML digabung dengan Framework.',
 			'persen' => '50%',
-			'skill' => 'CSS',
+			'skill' => 'yellow',
 			],
 			[
 			'keahlian' => 'JAVA',
 			'deskripsi' => 'Jarang saya gunakan karena kebutuhan untuk JAVA kurang.',
 			'persen' => '30%',
-			'skill' => 'JAVA',
+			'skill' => 'red',
 			],
 			[
 			'keahlian' => 'PHP',
 			'deskripsi' => 'Biasanya saya gunakan untuk membuat website dinamis digabung dengan HTML.',
 			'persen' => '45%',
-			'skill' => 'PHP',
+			'skill' => 'yellow',
 			],
 			[
 			'keahlian' => 'MySQL',
 			'deskripsi' => 'Digunakan untuk membuat dan manajemen basis data SQL.',
 			'persen' => '45%',
-			'skill' => 'MySQL',
+			'skill' => 'yellow',
 			],
 		];
 		$portofolio = [
@@ -104,16 +104,20 @@
 		];
 		$sosmed = [
 			[
-			'sosmed' => '<a href="https://t.me/Ararra"><img src="media/ikon/telegram.svg" width="40px" alt="telegram"></a>',
+			'sosmed' => 'href="https://t.me/Ararra"',
+			'ikon' => 'media/ikon/telegram.svg',
 			],
 			[
-			'sosmed' => '<a href="https://www.facebook.com/profile.php?id=100040939097287"><img src="media/ikon/facebook.svg" width="40px"></a>',
+			'sosmed' => 'href="https://www.facebook.com/profile.php?id=100040939097287"',
+			'ikon' => 'media/ikon/facebook.svg',
 			],
 			[
-			'sosmed' => '<a href="https://wa.me/62895341112746"><img src="media/ikon/whatsapp.svg" width="40px"></a>',
+			'sosmed' => 'href="https://wa.me/62895341112746"',
+			'ikon' => 'media/ikon/whatsapp.svg',
 			],
 			[
-			'sosmed' => '<a href="https://www.instagram.com/mramamaulana60/?hl=id"><img src="media/ikon/instagram.svg" width="40px"></a>',
+			'sosmed' => 'href="https://www.instagram.com/mramamaulana60/?hl=id"',
+			'ikon' => 'media/ikon/instagram.svg',
 			],
 		];
 	?>

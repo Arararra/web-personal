@@ -86,14 +86,14 @@
 	        <textarea class="uk-textarea" rows="5" placeholder="Your Message"></textarea>
 	    </div>
 	    <div class="uk-margin">
-	    	<button class="uk-button uk-button-default uk-width-1-1" type="submit">Send</button>
+	    	<button class="uk-button uk-button-primary uk-width-1-1" type="submit">Send</button>
 	    </div>
 		<div class="uk-text-center">
 			<h4>Atau melalui</h4>
 			<div class="uk-flex uk-flex-center">
-				<?php foreach ($sosmed as $key => $value): ?>
+				<?php foreach ($sosmed as $key => $value): ?> 
 					<div class="uk-margin-right uk-margin-left">
-						<?php echo $value['sosmed'] ?>
+						<a <?php echo $value['sosmed'] ?> target="_blank"><img src="<?php echo $value['ikon'] ?>" width="40px"></a>
 					</div>
 				<?php endforeach ?>
 			</div>
