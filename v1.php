@@ -28,7 +28,7 @@
 	        <div class="uk-card uk-card-default uk-card-hover uk-card-body uk-text-center">
 	        	<h1><b>Profilku</b></h1>
 	            <h3 class="uk-card-title uk-text-center"><img class="uk-border-circle" width="200" height="200" src="<?php echo $value['foto'] ?>"></h3>
-	            <p>Perkenalkan, namaku <?php echo $value['nama'] ?> biasa dipanggil <?php echo $value['panggilan'] ?></p>
+	            <p><?php echo $value['salam'] ?></p>
 				<div class="uk-grid-divider uk-child-width-expand@s" uk-grid>
 			    <div>
 			    	<h4>Kelahiran</h4>
@@ -51,7 +51,7 @@
 	<br id="skill"><br><br>
 
 	<!-- keahlian -->
-	<h1 align="center">Keahlian</h1>
+	<h1 class="uk-text-center">Keahlian</h1>
 	<div class="uk-container uk-container-expands">
 	<div class="uk-grid-column-small uk-grid-row-small uk-child-width-1-3@s uk-text-center uk-flex uk-flex-center" uk-grid>
     <?php foreach ($keahlian as $key => $value): ?>
@@ -68,15 +68,14 @@
 	<br id="sekolah"><br><br>
 
 	<!-- pendidikan -->
-	<h1 align="center">Riwayat Pendidikan</h1>
-	<div class="uk-grid-column-small uk-grid-row-large uk-child-width-expand@s uk-text-center uk-flex uk-flex-center">
-	<div class="uk-flex uk-flex-center" uk-grid>
+	<h1 class="uk-text-center">Riwayat Pendidikan</h1>
+	<div class="uk-text-center uk-flex uk-flex-center">
+	<div class="uk-grid-column-small" uk-grid>
 	<?php foreach ($pendidikan as $key => $value): ?>
-	<div class="uk-child-width-1-2@">
-    <div style="max-width: 370px;">
-        <div class="uk-card uk-card-default uk-card-body uk-card-hover" style="height: 550px">
-            <div class="uk-card-media-top">
-                <img src="<?php echo $value['gambar'] ?>" alt="">
+    <div style="max-width: 390px;">
+        <div class="uk-card uk-card-default uk-card-body uk-card-hover" style="height: 500px">
+            <div class="uk-card-media-top" style="max-height: 190px; overflow: hidden;">
+                <img src="<?php echo $value['gambar'] ?>">
             </div>
             <div class="uk-card-body">
                 <h3 class="uk-card-title"><?php echo $value['tahun'] ?></h3>
@@ -85,7 +84,6 @@
             </div>
         </div>
     </div>
-	</div>
 	<?php endforeach ?>
 	</div>
 	</div>
@@ -93,12 +91,12 @@
 	<br id="portofolio"><br><br>
 
 	<!-- portofolio -->
-	<h1 align="center">Portofolio</h1>
-	<div class="uk-grid-column-small uk-grid-row-large uk-child-width-expand@s uk-flex uk-flex-center">
-	<div class="uk-flex uk-flex-center uk-grid-large uk-grid" uk-grid>
+	<h1 class="uk-text-center">Portofolio</h1>
+	<div class="uk-child-width-expand@s uk-flex uk-flex-center">
+	<div class="uk-flex uk-flex-center uk-grid-small uk-grid" uk-grid>
 	<?php foreach ($portofolio as $key => $value): ?>
 	<div class="uk-child-width-expand@s">
-	<div class="uk-card uk-card-default uk-card-body uk-card-hover portofolio">
+	<div class="uk-card uk-card-default uk-card-body uk-card-hover portofolio" style="width: 595px">
 	    <div class="uk-card-badge uk-label"><?php echo $value['label'] ?></div>
 	    <h3 class="uk-card-title"><?php echo $value['judul'] ?></h3>
 	    <p><?php echo $value['deskripsi'] ?></p>

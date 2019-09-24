@@ -16,6 +16,7 @@
 			[
 			'panggilan' => 'Rama',
 			'nama' => 'M. Rama Maulana',
+			'salam' => 'Perkenalkan, namaku M. Rama Maulana biasa dipanggil Rama',
 			'ttl' => '09 Oktober 2002, Surabaya',
 			'alamat' => 'Jl. Tanah Merah Sayur 4 no. 32 Surabaya, Indonesia',
 			'foto' => 'media/foto.jpg',

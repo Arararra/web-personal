@@ -6,7 +6,7 @@
 	<!-- isi -->
 	<!-- kiri -->
 	<div>
-		<div class="uk-card uk-card-default profil">
+		<div class="uk-card profil">
 	        <div class="uk-card-media-top">
 	            <img src="media/foto.jpg">
 	        </div>
