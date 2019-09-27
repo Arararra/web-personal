@@ -53,16 +53,16 @@
 	<!-- keahlian -->
 	<h1 class="uk-text-center">Keahlian</h1>
 	<div class="uk-container uk-container-expands">
-	<div class="uk-grid-column-small uk-grid-row-small uk-child-width-1-3@s uk-text-center uk-flex uk-flex-center" uk-grid>
-    <?php foreach ($keahlian as $key => $value): ?>
-    <div>
-        <div class="uk-card uk-card-default uk-card-body uk-card-hover" style="height: 200px">
-        	<p><div class="uk-label uk-label-success"><?php echo $value['keahlian'] ?></div></p>
-			<p><?php echo $value['deskripsi'] ?></p>
-        </div>
-    </div>
-    <?php endforeach ?>
-	</div>
+		<div class="uk-grid-column-small uk-grid-row-small uk-child-width-1-3@s uk-text-center uk-flex uk-flex-center" uk-grid>
+		    <?php foreach ($keahlian as $key => $value): ?>
+		    <div>
+		        <div class="uk-card uk-card-default uk-card-body uk-card-hover" style="height: 200px">
+		        	<p><div class="uk-label uk-label-success"><?php echo $value['keahlian'] ?></div></p>
+					<p><?php echo $value['deskripsi'] ?></p>
+		        </div>
+		    </div>
+		    <?php endforeach ?>
+		</div>
 	</div>
 
 	<br id="sekolah"><br><br>
@@ -70,23 +70,23 @@
 	<!-- pendidikan -->
 	<h1 class="uk-text-center">Riwayat Pendidikan</h1>
 	<div class="uk-text-center uk-flex uk-flex-center">
-	<div class="uk-grid-column-small" uk-grid>
-	<?php foreach ($pendidikan as $key => $value): ?>
-    <div style="max-width: 390px;">
-        <div class="uk-card uk-card-default uk-card-body uk-card-hover" style="height: 500px">
-            <div class="uk-card-media-top uk-cover-container" style="max-height: 190px; overflow: hidden;">
-                <img src="<?php echo $value['gambar'] ?>">
-                <canvas width="600" height="400"></canvas>
-            </div>
-            <div class="uk-card-body">
-                <h3 class="uk-card-title"><?php echo $value['tahun'] ?></h3>
-                <p><?php echo $value['sekolah'] ?></p>
-                <p><?php echo $value['lokasi'] ?></p>
-            </div>
-        </div>
-    </div>
-	<?php endforeach ?>
-	</div>
+		<div class="uk-grid-column-small" uk-grid>
+			<?php foreach ($pendidikan as $key => $value): ?>
+		    <div style="max-width: 390px;">
+		        <div class="uk-card uk-card-default uk-card-body uk-card-hover" style="height: 500px">
+		            <div class="uk-card-media-top uk-cover-container" style="max-height: 190px; overflow: hidden;">
+		                <img src="<?php echo $value['gambar'] ?>">
+		                <canvas width="600" height="400"></canvas>
+		            </div>
+		            <div class="uk-card-body">
+		                <h3 class="uk-card-title"><?php echo $value['tahun'] ?></h3>
+		                <p><?php echo $value['sekolah'] ?></p>
+		                <p><?php echo $value['lokasi'] ?></p>
+		            </div>
+		        </div>
+		    </div>
+			<?php endforeach ?>
+		</div>
 	</div>
 
 	<br id="portofolio"><br><br>
@@ -94,18 +94,18 @@
 	<!-- portofolio -->
 	<h1 class="uk-text-center">Portofolio</h1>
 	<div class="uk-child-width-expand@s uk-flex uk-flex-center">
-	<div class="uk-flex uk-flex-center uk-grid-small uk-grid" uk-grid>
-	<?php foreach ($portofolio as $key => $value): ?>
-	<div class="uk-child-width-expand@s">
-	<div class="uk-card uk-card-default uk-card-body uk-card-hover portofolio" style="width: 595px">
-	    <div class="uk-card-badge uk-label"><?php echo $value['label'] ?></div>
-	    <h3 class="uk-card-title"><?php echo $value['judul'] ?></h3>
-	    <p><?php echo $value['deskripsi'] ?></p>
-	    <a class="uk-button uk-button-default" href="<?php echo $value['image'] ?>" data-lightbox="<?php echo $value['galeri'] ?>" data-title="<?php echo $value['caption'] ?>">Tampilkan</a>
-	</div>
-	</div>
-	<?php endforeach ?>
-	</div>
+		<div class="uk-flex uk-flex-center uk-grid-small uk-grid" uk-grid>
+			<?php foreach ($portofolio as $key => $value): ?>
+			<div class="uk-child-width-expand@s">
+				<div class="uk-card uk-card-default uk-card-body uk-card-hover portofolio" style="width: 595px">
+				    <div class="uk-card-badge uk-label"><?php echo $value['labelgbg'] ?></div>
+				    <h3 class="uk-card-title"><?php echo $value['judul'] ?></h3>
+				    <p><?php echo $value['deskripsi'] ?></p>
+				    <a class="uk-button uk-button-default" href="<?php echo $value['thumb'] ?>" data-lightbox="<?php echo $value['galeri'] ?>" data-title="<?php echo $value['caption'] ?>">Tampilkan</a>
+				</div>
+			</div>
+			<?php endforeach ?>
+		</div>
 	</div>
 
 	<br><br id="kontak"><br>

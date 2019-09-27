@@ -1,4 +1,5 @@
 <?php include 'header.php'; ?>
+
 	<div class="uk-text-center uk-card uk-card-body">
 		<h1>M. Rama Maulana</h1>
 		<h4>Berikut adalah hasil kerja saya dalam satu minggu ini.</h4>
@@ -14,4 +15,5 @@
 			</div>
 		</div>
 	</div>
+
 <?php include 'footer.php'; ?>

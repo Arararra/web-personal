@@ -54,9 +54,14 @@
 
 		<!-- portfolio -->
 		<h1>Portfolio</h1>
-		<?php foreach ($portofolio as $key => $value): ?>
-		<a href="portofolio.php?id=<?php echo $value['id'] ?>"><img src="<?php echo $value['image'] ?>" width="300"></a>
-		<?php endforeach ?>
+		<div class="uk-grid" uk-grid>
+			<?php foreach ($portofolio as $key => $value): ?>
+				<div class="uk-text-center">
+					<a href="portofolio.php?id=<?php echo $value['id'] ?>"><img src="<?php echo $value['thumb'] ?>" style="width: 300px; height: 150px;"></a>
+					<h3 style="margin-top: 5px;"><?php echo $value['judul'] ?></h3>
+				</div>
+			<?php endforeach ?>	
+		</div>
 		<hr>
 
 		<!-- kontak -->

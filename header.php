@@ -84,22 +84,42 @@
 		];
 		$portofolio = [
 			[
-			'label' => 'PHP & HTML & CSS',
+			'labelgbg' => 'PHP & HTML & CSS',
+			'label' => [
+				'PHP', 
+				'HTML', 
+				'CSS',
+			],
 			'judul' => 'Registrasi Database',
 			'deskripsi' => 'Membuat form registrasi yang terhubung dengan basis data SQL dan juga menampilkan tabel.',
 			'galeri' => 'database',
-			'image' => 'media/portofolio/form.png',
+			'thumb' => 'media/portofolio/form.png',
+			'image' => [
+				'media/portofolio/afterform.png',
+				'media/portofolio/tabel.png',
+			],
 			'caption' => 'Ini adalah tampilan web registrasi.',
 			'id' => "0",
+			'selesai' => '17 July 2019',
 			],
 			[
-			'label' => 'HTML & CSS',
+			'labelgbg' => 'HTML & CSS',
+			'label' => [
+				'HTML', 
+				'CSS',
+			],
 			'judul' => 'Web Statis Cafe',
 			'deskripsi' => 'Membuat web start-up untuk Cafe.',
 			'galeri' => 'cafe',
-			'image' => 'media/portofolio/homecafe.png',
+			'thumb' => 'media/portofolio/homecafe.png',
+			'image' => [
+				'media/portofolio/aboutcafe.png',
+				'media/portofolio/menucafe.png',
+				'media/portofolio/contactcafe.png',
+			],
 			'caption' => 'Ini adalah tampilan awal web cafe.',
 			'id' => "1",
+			'selesai' => '10 September 2019',
 			],
 		];
 		$sosmed = [
